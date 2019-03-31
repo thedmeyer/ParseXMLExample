@@ -3,6 +3,7 @@ function parseXML(input) {
 	var i = -1;
 	var result = '';
 
+	var curr = '';
 	var prev = '';
 	var next = '';
 	var skip = false;
@@ -67,8 +68,11 @@ function parseXML(input) {
 	//result = result.slice(0, -1) + ']';
 
 	console.log(result);
+	return result;
 
 }
+
+module.exports = parseXML;
 
 
 //parseXML("<a><a>blah</a></a>");
