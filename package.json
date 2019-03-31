@@ -1,0 +1,22 @@
+{
+  "name": "parsexmlexample",
+  "version": "1.0.0",
+  "description": "A coding exercise to parse elementary XML without external tools.",
+  "main": "parse.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedmeyer/ParseXMLExample.git"
+  },
+  "keywords": [
+    "xml",
+    "parser"
+  ],
+  "author": "David Meyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedmeyer/ParseXMLExample/issues"
+  },
+}
