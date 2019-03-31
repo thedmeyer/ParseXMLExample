@@ -15,42 +15,50 @@ function parseXML(input) {
 		prev = input[i-1];
 		next = input[i+1];
 
+		// If / reached, then we are closing an object.
 		if (curr == '/') {
 			skip = true;
 			result += '}';
 			continue;
 		}
 
+		// In this case, we must've run into two objects on the same level.
 		if (curr == '<' && next != '/') {
 			result += '{';
 			continue;
 		}
 
+		// No longer skipping the closing tag. resume normal parsing.
 		if (curr == '>' && skip) {
 			skip = false;
 			continue;
 		}
 
+		// Tag name capture done. Get ready for contents.
 		if (curr == '>') {
 			result += "':";
 			continue;
 		}
 
+		// Building a new tag name.
 		if (prev == '<') {
 			result += "'" + curr;
 			continue;
 		}
 
+		// Closing a new tag name.
 		if (prev == '>' && next != '/') {
 			result += "'" + curr;
 			continue;
 		}
 
+		// Forward search. New tag.
 		if (next == '<') {
 			result += curr + "'";
 			continue;
 		}
 
+		// If in closing tag, skip.
 		if (next == '/') {
 			continue;
 		}
