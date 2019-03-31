@@ -72,6 +72,5 @@ function parseXML(input) {
 
 
 //parseXML("<a><a>blah</a></a>");
-parseXML("<a>blah</a><a><a>blah</a></a><a>blah</a>");
+//parseXML("<a>blah</a><a><a>blah</a></a><a>blah</a>");
 //parseXML("<a>blah</a>");
-

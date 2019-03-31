@@ -2,7 +2,7 @@
   "name": "parsexmlexample",
   "version": "1.0.0",
   "description": "A coding exercise to parse elementary XML without external tools.",
-  "main": "parse.js",
+  "main": "parseXML.js",
   "scripts": {
     "test": "test"
   },
