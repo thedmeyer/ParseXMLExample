@@ -1,25 +1,16 @@
 {
-  "name": "parsexmlexample",
+  "name": "testing",
   "version": "1.0.0",
-  "description": "A coding exercise to parse elementary XML without external tools.",
-  "main": "parseXML.js",
-  "scripts": {
+  "description": "",
+  "main": "test.js",
+  "directories": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thedmeyer/ParseXMLExample.git"
+  "scripts": {
+    "test": "mocha"
   },
-  "keywords": [
-    "xml",
-    "parser"
-  ],
-  "author": "David Meyer",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thedmeyer/ParseXMLExample/issues"
-  },
-  "homepage": "https://github.com/thedmeyer/ParseXMLExample#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.2"
